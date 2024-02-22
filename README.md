@@ -30,7 +30,7 @@ This repository contains a Test Automation Framework built using Playwright and 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.gamma.bcg.com/Gamma-D/playwright-api-automation-framework.git
+   git clone https://github.com/sayan-tan/playwright-api-automation.git
    ```
 
 2. Navigate to the project directory:
@@ -89,7 +89,7 @@ The tests follow a modular and maintainable structure:
 - `playwright-report`: Contains the HTML report for tests (Logs are attached).
 - `test-data`: Contains external files (example: user create/update data) that can be used to mock data during tests.
 - `tests-reqres`: Contains the actual test files. You can organize your tests into subdirectories as needed. 
-- `utils`: Contains the Utilities that provides methods for asserting different conditions on web elements, handling requests and responses.
+- `utils`: Contains the Utilities that provide methods for asserting different conditions on web elements, handling requests, and responses.
 
 ## ⚙️ Configuration
 
@@ -100,11 +100,11 @@ The tests follow a modular and maintainable structure:
 
 ## 🔄 Continuous Integration
 
-This project is configured for CI using Github Actions. Check the configurations in `.github/workflows/*.yml`.
+This project is configured for CI using GitHub Actions. Check the configurations in `.github/workflows/*.yml`.
 
-- `01_api_tests.yml`: This workflow executes tests in pre-defined environment PROD.
-- `02_api_tests_select_env.yml`: This workflow will first ask User to select the environment (DEV / Pre-PROD / PROD) for tests execution.
+- `01_api_tests.yml`: This workflow executes tests in a pre-defined environment PROD.
+- `02_api_tests_select_env.yml`: This workflow will first ask the User to select the environment (DEV / Pre-PROD / PROD) for test execution.
 
 ## 📊 Reporting
 
-Playwright HTML report (Logs are attached) is stored in the `playwright-report` directory.
+The Playwright HTML report (Logs are attached) is stored in the `playwright-report` directory.
